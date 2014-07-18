@@ -1,25 +1,47 @@
 Classification of arXiv papers using titles and abstracts
 Michael Mortonson
 
-I will design an application that automatically classifies research articles in a general subject area by assigning them to one or more of the arXiv [1] subject categories. The training data will initially consist of a collection of titles and abstracts from a representative sample of articles, downloaded using the arXiv API [2] or one of the related services described at [3].
+I will design an application that automatically classifies research 
+articles in a general subject area by assigning them to one or more of 
+the arXiv [1] subject categories. The training data will initially consist 
+of a collection of titles and abstracts from a representative sample of 
+articles, downloaded using the arXiv API [2] or one of the related services 
+described at [3].
 
-For most of this project I will probably use Python with a text analysis package such as NLTK or TextBlob, although I may also try out some of the R scripts from the D-Lab text analysis workshop [4]. I will start by writing scripts to retrieve the data (titles, abstracts, and subject classes) and organize them in the necessary format.
+For most of this project I will probably use Python with a text analysis 
+package such as NLTK or TextBlob, although I may also try out some of the 
+R scripts from the D-Lab text analysis workshop [4]. I will start by 
+writing scripts to retrieve the data (titles, abstracts, and subject 
+classes) and organize them in the necessary format.
 
 Some of the questions I plan to address in this project are:
 * Which classification methods provide the greatest accuracy for this problem?
 * How many articles from each subject area are needed to train the classifier?
-* How much does the date range of the training set matter (due to e.g. changes in subjects being studied and terminology used over time)?
-* Does additional article metadata such as the authors' names improve the accuracy of the classification algorithm?
+* How much does the date range of the training set matter (due to e.g. 
+  changes in subjects being studied and terminology used over time)?
+* Does additional article metadata such as the authors' names improve the 
+  accuracy of the classification algorithm?
 * Are certain subjects more difficult to identify than others?
-* Is there any evidence that some of the existing arXiv subject classes are either too narrowly defined (e.g. if articles from two different classes tend to get grouped together often) or too broad (may need to use unsupervised categorization to determine this). 
+* Is there any evidence that some of the existing arXiv subject classes are 
+  either too narrowly defined (e.g. if articles from two different classes 
+  tend to get grouped together often) or too broad (may need to use 
+  unsupervised categorization to determine this). 
 
 Possible extensions (if time permits) include:
-* Experiment with unsupervised categorization of article abstracts, using topic modeling methods like latent Dirichlet allocation. How closely do the categories identified match up with the existing arXiv subject classes? Does the analysis suggest a need for any new subject classes?
+* Experiment with unsupervised categorization of article abstracts, using 
+  topic modeling methods like latent Dirichlet allocation. How closely do 
+  the categories identified match up with the existing arXiv subject classes? 
+  Does the analysis suggest a need for any new subject classes?
 * Train the algorithm using full text from a selected set of articles [5].
-* Devise a measure of similarity between articles, and use this metric to link articles together. Such a network could be useful for multiple applications, e.g. suggesting new articles to read based on what a researcher is currently reading, or helping authors and journal referees identify articles that should have been cited by a new study but weren't.
+* Devise a measure of similarity between articles, and use this metric to 
+  link articles together. Such a network could be useful for multiple 
+  applications, e.g. suggesting new articles to read based on what a 
+  researcher is currently reading, or helping authors and journal referees 
+  identify articles that should have been cited by a new study but weren't.
 
 [1] http://arxiv.org/
 [2] http://arxiv.org/help/api/index
 [3] http://arxiv.org/help/bulk_data
 [4] https://github.com/clemriedel/r
-[5] http://www.cs.cornell.edu/projects/kddcup/datasets.html,  http://arxiv.org/help/bulk_data_s3
+[5] http://www.cs.cornell.edu/projects/kddcup/datasets.html, 
+    http://arxiv.org/help/bulk_data_s3
