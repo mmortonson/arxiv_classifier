@@ -1,11 +1,10 @@
-## Classification of arXiv papers using titles and abstracts
+## Automated classification of arXiv papers
 
 The general goal of this project is to automatically classify research 
 articles by assigning them to one or more of 
-the arXiv [1] subject categories. The training data consist 
+the arXiv ([1]) subject categories. The training data consist 
 of a collection of titles and abstracts from a representative sample of 
-articles, downloaded using the arXiv API [2] (or, alternatively, one of the related services 
-described at [3]).
+articles, downloaded using the arXiv API ([2]), or, alternatively, one of the related services described at [3].
 
 ### Questions
 
@@ -27,7 +26,7 @@ described at [3]).
   topic modeling methods like latent Dirichlet allocation. How closely do 
   the categories identified match up with the existing arXiv subject classes? 
   Does the analysis suggest a need for any new subject classes?
-- Train the algorithm using full text from a selected set of articles [4] [5].
+- Train the algorithm using full text from a selected set of articles ([4], [5]).
 - Devise a measure of similarity between articles, and use this metric to 
   link articles together. Such a network could be useful for multiple 
   applications, e.g. suggesting new articles to read based on what a 
