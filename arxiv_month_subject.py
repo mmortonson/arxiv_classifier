@@ -24,7 +24,7 @@ base_url = 'http://export.arxiv.org/api/query?'
 # >> make these command line arguments
 month = '1402' # YYMM format
 # add check against full subject list or choose subject from menu
-subject = 'astro-ph.CO'
+subject = 'astro-ph.GA'
 #subject = 'cond-mat.mtrl-sci'
 max_results = 100
 # >> make optional command line arg. for output
